@@ -14,28 +14,33 @@
         <h1 id="title">Tip Calculator</h1>
       </header>
       <main>
-        <section id="bill-input">
-          <input
-            class="input-box"
-            type="number"
-            value=""
-            placeholder="Please enter bill amount"
-          />
-        </section>
-        <section id="tip-input">
-          <input
-            class="input-box"
-            type="number"
-            value=""
-            placeholder="Please enter tip percentage."
-          />
-        </section>
+        <form id="input-form">
+          <section id="bill-input">
+            <input
+              class="input-box"
+              type="number"
+              value=""
+              min="0"
+              placeholder="Please enter bill amount"
+            />
+          </section>
+          <section id="tip-input">
+            <input
+              class="input-box"
+              type="number"
+              value=""
+              min="0"
+              placeholder="Please enter tip percentage."
+            />
+          </section>
+        </form>
         <section id="results-box">
-          <p id="tip-amount">Your tip is:</p>
-          <p id="bill-total">Your bill total is:</p>
+          <p id="tip-amount">Your tip is: $0.00</p>
+          <p id="bill-total">Your bill total is: $0.00</p>
         </section>
-        <section id="calculation">
+        <section id="buttons">
           <button id="calculate" type="submit">Calculate</button>
+          <button id="reset">Reset</button>
         </section>
       </main>
     </div>
