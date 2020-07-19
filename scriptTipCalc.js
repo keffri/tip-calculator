@@ -14,3 +14,11 @@ function tipCalculator() {
 }
 
 document.getElementById("calculate").addEventListener("click", tipCalculator);
+
+calcReset = () => {
+  document.getElementById("input-form").reset();
+  document.getElementById("tip-amount").innerHTML = `Your tip is: $0.00`;
+  document.getElementById("bill-total").innerHTML = `Your bill total is: $0.00`;
+};
+
+document.getElementById("reset").addEventListener("click", calcReset);
