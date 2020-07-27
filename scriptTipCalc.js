@@ -5,6 +5,10 @@ tipCalculator = () => {
   let tipPercentage = tipInput / 100;
   let tip = billInput * tipPercentage;
   let billTotal = +billInput + +tip;
+  if (tip < 0 || billTotal < 0) {
+    alert("Please input positive values.");
+    return;
+  }
   document.getElementById(
     "tip-amount"
   ).innerHTML = `Your tip is: $${tip.toFixed(2)}`;
