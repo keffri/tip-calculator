@@ -5,7 +5,7 @@ tipCalculator = () => {
   let tipPercentage = tipInput / 100;
   let tip = billInput * tipPercentage;
   let billTotal = +billInput + +tip;
-  if (tip < 0 || billTotal < 0) {
+  if (billInput < 0 || tipInput < 0) {
     alert("Please input positive values.");
     return;
   }
